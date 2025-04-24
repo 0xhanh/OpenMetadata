@@ -28,6 +28,7 @@ import ptBR from '../../locale/languages/pt-br.json';
 import ptPT from '../../locale/languages/pt-pt.json';
 import ruRU from '../../locale/languages/ru-ru.json';
 import thTH from '../../locale/languages/th-th.json';
+import viVN from '../../locale/languages/vi-vn.json';
 import zhCN from '../../locale/languages/zh-cn.json';
 
 export enum SupportedLocales {
@@ -47,7 +48,7 @@ export enum SupportedLocales {
   Persian = 'pr-PR',
   Thai = 'th-TH',
   मराठी = 'mr-IN',
-  한국어 = 'ko-KR',
+  TiếngViệt = 'vi-VN',
 }
 
 export const languageSelectOptions = map(SupportedLocales, (value, key) => ({
@@ -76,7 +77,7 @@ export const getInitOptions = (): InitOptions => {
       'pr-PR': { translation: prPR },
       'th-TH': { translation: thTH },
       'mr-IN': { translation: mrIN },
-      'ko-KR': { translation: koKR },
+      'vi-VN': { translation: viVN },
     },
     fallbackLng: ['en-US'],
     detection: {
